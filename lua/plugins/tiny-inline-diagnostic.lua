@@ -4,7 +4,7 @@ return {
 	priority = 1000,
 	config = function()
 		require("tiny-inline-diagnostic").setup({
-			preset = "modern",
+			preset = "simple",
 			-- transparent_bg = true,
 			options = {
 				show_source = {
