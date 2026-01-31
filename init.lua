@@ -1,6 +1,9 @@
 -- Basic Config
 require("config.basic")
 
+-- Diagnostic Config
+require("config.diagnostic")
+
 -- Keybindings
 require("config.keybindings")
 
