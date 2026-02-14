@@ -50,6 +50,10 @@ vim.o.smartindent = true
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 
+-- netrw file explorer config
+vim.g.loaded_netrwPlugin = 1
+vim.g.netrw_liststyle = 3
+
 -- Highlight when yanking text
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",

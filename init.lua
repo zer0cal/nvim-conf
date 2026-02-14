@@ -9,3 +9,6 @@ require("config.keybindings")
 
 -- lazy.nvim - Plugin manager
 require("config.lazy")
+
+-- colorscheme
+vim.cmd("colorscheme rose-pine")

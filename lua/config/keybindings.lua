@@ -3,6 +3,8 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+-- vim.keymap.set("n", "<leader>n", "<cmd>Explore<CR>", { desc = "Open [N]etrw" })
+vim.keymap.set("n", "<leader>n", "<cmd>NvimTreeOpen<CR>", { desc = "Open [N]vimTree" })
 
 -- Keybinds to make split navigation easier.
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
