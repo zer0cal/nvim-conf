@@ -6,6 +6,11 @@ return {
 		require("koda").setup({
 			transparent = true,
 			auto = true,
+			colors = {
+				operator = "#cecece",
+				special = "#ec8013",
+				highlight = "#ec8013",
+			},
 		})
 		-- vim.cmd("colorscheme koda")
 	end,
