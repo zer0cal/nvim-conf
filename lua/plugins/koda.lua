@@ -6,10 +6,17 @@ return {
 		require("koda").setup({
 			transparent = true,
 			auto = true,
+			styles = {
+				functions = { bold = true },
+				keywords = {},
+				comments = { italic = true },
+				strings = {},
+				constants = {}, -- includes numbers, booleans
+			},
 			colors = {
-				operator = "#cecece",
-				special = "#ec8013",
-				highlight = "#ec8013",
+				fg = "#eeeeee",
+				keyword = "#9090c0",
+				comment = "#606060",
 			},
 		})
 		-- vim.cmd("colorscheme koda")
