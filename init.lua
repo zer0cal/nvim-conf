@@ -11,4 +11,4 @@ require("config.keybindings")
 require("config.lazy")
 
 -- colorscheme
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme koda-moss")
