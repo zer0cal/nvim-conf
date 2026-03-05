@@ -8,14 +8,13 @@ return {
 			auto = true,
 			styles = {
 				functions = { bold = true },
-				keywords = {},
+				keywords = { bold = true },
 				comments = { italic = true },
 				strings = {},
 				constants = {}, -- includes numbers, booleans
 			},
 			colors = {
-				fg = "#eeeeee",
-				keyword = "#9090c0",
+				keyword = "#ffffff",
 				comment = "#606060",
 			},
 		})
