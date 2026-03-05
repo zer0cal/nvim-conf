@@ -10,6 +10,7 @@ return {
 				operator = "#cecece",
 				special = "#ec8013",
 				highlight = "#ec8013",
+				const = "#ec8013",
 			},
 		})
 		-- vim.cmd("colorscheme koda")
