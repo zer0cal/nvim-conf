@@ -15,7 +15,6 @@ return {
 			},
 			colors = {
 				keyword = "#ffffff",
-				comment = "#606060",
 			},
 		})
 		-- vim.cmd("colorscheme koda")
