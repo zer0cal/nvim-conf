@@ -22,13 +22,14 @@ vim.o.smartcase = true
 
 vim.o.signcolumn = "yes"
 
-vim.o.updatetime = 250
+vim.o.updatetime = 0
 
-vim.o.timeoutlen = 300
+vim.o.timeoutlen = 0
 
 -- Toggle whitespace characters.
 vim.o.list = false
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+
 vim.keymap.set("n", "<leader>tl", function()
 	vim.o.list = not vim.o.list
 end, { desc = "Toggle whitespace characters" })

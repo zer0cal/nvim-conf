@@ -8,7 +8,7 @@ return {
 			auto = true,
 			styles = {
 				functions = { bold = true },
-				keywords = { bold = true },
+				keywords = { bold = false },
 				comments = { italic = true },
 				strings = {},
 				constants = {}, -- includes numbers, booleans
