@@ -1,14 +1,27 @@
 return { -- Collection of various small independent plugins/modules
-	"echasnovski/mini.nvim",
-	config = function()
-		require("mini.ai").setup({ n_lines = 500 })
-		require("mini.surround").setup()
-		-- local statusline = require("mini.statusline")
-		-- statusline.setup({ use_icons = vim.g.have_nerd_font })
+	{
+		"nvim-mini/mini.nvim",
+		version = "*",
+		config = function()
+			require("mini.ai").setup()
+			require("mini.align").setup()
+			require("mini.surround").setup({
+				mappings = {
+					add = "sa", -- Add surrounding in Normal and Visual modes
+					delete = "sd", -- Delete surrounding
+					find = "sf", -- Find surrounding (to the right)
+					find_left = "sF", -- Find surrounding (to the left)
+					highlight = "sh", -- Highlight surrounding
+					replace = "sr", -- Replace surrounding
 
-		---@diagnostic disable-next-line: duplicate-set-field
-		-- statusline.section_location = function()
-		-- 	return "%2l:%-2v"
-		-- end
-	end,
+					suffix_last = "l", -- Suffix to search with "prev" method
+					suffix_next = "n", -- Suffix to search with "next" method
+				},
+			})
+			require("mini.cursorword").setup()
+			-- require("mini.splitjoin").setup()
+			-- require("mini.operators").setup()
+			require("mini.extra").setup()
+		end,
+	},
 }
