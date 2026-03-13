@@ -26,11 +26,11 @@ return { -- Highlight, edit, and navigate code
 
 				-- enables treesitter based folds
 				-- for more info on folds see `:help folds`
-				-- vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-				-- vim.wo.foldmethod = 'expr'
+				-- vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+				-- vim.wo.foldmethod = "expr"
 
 				-- enables treesitter based indentation
-				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+				-- vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 			end,
 		})
 	end,
