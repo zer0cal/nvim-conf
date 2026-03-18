@@ -6,6 +6,7 @@ return {
 		auto_theme_custom.normal.c.bg = "none"
 		auto_theme_custom.insert.c.bg = "none"
 		auto_theme_custom.visual.c.bg = "none"
+		auto_theme_custom.command.c.bg = "none"
 		require("lualine").setup({
 			options = {
 				theme = auto_theme_custom,
