@@ -8,13 +8,19 @@ return {
 			auto = true,
 			styles = {
 				functions = { bold = true },
-				keywords = {},
+				keywords = { bold = false },
 				comments = { italic = true },
-				strings = {},
-				constants = {}, -- includes numbers, booleans
+
+				-- 	strings = {},
+				-- 	constants = {}, -- includes numbers, booleans
 			},
 			colors = {
-				keyword = "#ffffff",
+				const = "#d9ba73",
+				-- keyword = "#ffffff",
+				-- emphasis = "#71ade7",
+				-- func = "#71ade7",
+				string = "#95cb82",
+				char = "#cc8bc9",
 			},
 		})
 		-- vim.cmd("colorscheme koda")

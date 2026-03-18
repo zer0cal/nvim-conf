@@ -5,9 +5,37 @@ return { -- Highlight, edit, and navigate code
 	branch = "main",
 	-- [[ Configure Treesitter ]] See `:help nvim-treesitter-intro`
 	config = function()
-		local parsers =
-			{ "bash", "c", "diff", "html", "lua", "luadoc", "markdown", "markdown_inline", "query", "vim", "vimdoc" }
-		require("nvim-treesitter").install(parsers)
+		-- local parsers = {
+		-- 	"bash",
+		-- 	"c",
+		-- 	"diff",
+		-- 	"html",
+		-- 	"lua",
+		-- 	"luadoc",
+		-- 	"markdown",
+		-- 	"markdown_inline",
+		-- 	"query",
+		-- 	"vim",
+		-- 	"vimdoc",
+		-- }
+		-- require("nvim-treesitter").install(parsers)
+
+		vim.api.nvim_create_autocmd("User", {
+			pattern = "TSUpdate",
+			callback = function()
+				require("nvim-treesitter.parsers").fsharp = {
+					install_info = {
+						url = "https://github.com/ionide/tree-sitter-fsharp",
+						branch = "main",
+						files = { "src/scanner.c", "src/parser.c" },
+						location = "fsharp",
+					},
+					requires_generate_from_grammar = false,
+					filetype = "fsharp",
+				}
+			end,
+		})
+
 		vim.api.nvim_create_autocmd("FileType", {
 			callback = function(args)
 				local buf, filetype = args.buf, args.match
