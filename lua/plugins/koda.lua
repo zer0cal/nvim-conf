@@ -11,11 +11,11 @@ return {
 				keywords = { bold = false },
 				comments = { italic = true },
 
-				-- 	strings = {},
-				-- 	constants = {}, -- includes numbers, booleans
+				strings = {},
+				constants = {}, -- includes numbers, booleans
 			},
 			colors = {
-				const = "#d9ba73",
+				-- const = "#d9ba73",
 				-- keyword = "#ffffff",
 				-- emphasis = "#71ade7",
 				-- func = "#71ade7",
